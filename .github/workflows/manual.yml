@@ -1,25 +1,7 @@
-name: My workflow
+name: Test-Build
+on:
 
-
-on: [push]
-
-
-jobs:
-  hello_world_job:
-    runs-on: ubuntu-latest
-    name: A job to say hello
-    steps:
-      - name: Hello world action step
-        id: hello
-        uses: actions/hello-world-docker-action@v1
-        with:
-          who-to-greet: Robson lima
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
- runs-on: ubuntu-latest
-
-     schedule:
+ schedule:
  - cron: '0 */6 * * 5'  # https://crontab.guru/ #
   
  push:                   # EXECUÇÃO A CADA PUSH NA BRANCH MAIN
