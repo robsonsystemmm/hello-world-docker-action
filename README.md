@@ -17,6 +17,6 @@ Todos os testes tem que esta ok
 
  ## Exemplo de uso
 
- uses: actions/hello-world-docker-action@v1
- with:
-   who-to-greet: Rosbon lima
+1 - clicar em action e fazer o run da workspace
+2- obesevar a instalacao do ubunto
+3- observar a instalação do newman e os testes.
