@@ -1,22 +1,20 @@
 {
 	"info": {
-		"_postman_id": "daafdebb-3849-42d8-9df5-56cc20ba5b83",
-		"name": "MinhaColecao",
-		"description": "Insira seus comentarios aqui",
+		"_postman_id": "ba0caae2-6a44-4dba-9e3a-8c8688917f9d",
+		"name": "Placeholder",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "7347102"
+		"_exporter_id": "29289633",
+		"_collection_link": "https://www.postman.com/grey-escape-119155/workspace/aula-api-week-3/collection/29289633-ba0caae2-6a44-4dba-9e3a-8c8688917f9d?action=share&source=collection_link&creator=29289633"
 	},
 	"item": [
 		{
-			"name": "Get consult",
+			"name": "Get_placeHolder",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -30,7 +28,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[ \r\n    { \r\n        \"id\": 11, \r\n        \"name\": \"Carlos ultima\", \r\n        \"username\": \"cau\", \r\n        \"email\": \"cau@april.biz\", \r\n        \"address\": { \r\n            \"street\": \"Romaguera-Crona Light\" , \r\n            \"suite\": \"Apt. 556\", \r\n            \"city\": \"aqui\", \r\n            \"zipcode\": \"92998-3838\", \r\n            \"geo\": { \r\n                \"lat\": \"-37.3199\", \r\n                \"lng\": \"81.1496\" \r\n            } \r\n        }, \r\n        \"telefone\": \"1-770-736-8031 x56442\", \r\n        \"site\": \"hildegard.org\", \r\n        \"empresa\": { \r\n            \"nome\": \"Romaguera-Crona\",\r\n            \"catchPhrase\": \"Rede neural cliente-servidor de várias camadas\", \r\n            \"bs\": \"aproveite os mercados eletrônicos em tempo real\" \r\n        } \r\n    } \r\n]\r\n",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Leanne Graham KKKKK2\",\r\n    \"username\": \"Bret\",\r\n    \"email\": \"Sincere@april.biz\",\r\n    \"address\": {\r\n        \"street\": \"Kulas Light\",\r\n        \"suite\": \"Apt. 556\",\r\n        \"city\": \"Gwenborough\",\r\n        \"zipcode\": \"92998-3874\",\r\n        \"geo\": {\r\n            \"lat\": \"-37.3159\",\r\n            \"lng\": \"81.1496\"\r\n        }\r\n    },\r\n    \"phone\": \"1-770-736-8031 x56442\",\r\n    \"website\": \"hildegard.org\",\r\n    \"company\": {\r\n        \"name\": \"Romaguera-Crona\",\r\n        \"catchPhrase\": \"Multi-layered client-server neural-net\",\r\n        \"bs\": \"harness real-time e-markets\"\r\n    }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -38,46 +36,124 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/users",
+					"raw": "https://jsonplaceholder.typicode.com/users/?name=Ervin Howell",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"jsonplaceholder",
+						"typicode",
+						"com"
 					],
 					"path": [
-						"users"
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ervin Howell"
+						}
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "{{url}}/users",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
+			"name": "Get_consulta_id",
 			"request": {
-				"method": "POST",
+				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "[ \r\n    { \r\n        \"id\": 11, \r\n        \"name\": \"Carlos ultima\", \r\n        \"username\": \"cau\", \r\n        \"email\": \"cau@april.biz\", \r\n        \"address\": { \r\n            \"street\": \"Romaguera-Crona Light\" , \r\n            \"suite\": \"Apt. 556\", \r\n            \"city\": \"aqui\", \r\n            \"zipcode\": \"92998-3838\", \r\n            \"geo\": { \r\n                \"lat\": \"-37.3199\", \r\n                \"lng\": \"81.1496\" \r\n            } \r\n        }, \r\n        \"telefone\": \"1-770-736-8031 x56442\", \r\n        \"site\": \"hildegard.org\", \r\n        \"empresa\": { \r\n            \"nome\": \"Romaguera-Crona\",\r\n            \"catchPhrase\": \"Rede neural cliente-servidor de várias camadas\", \r\n            \"bs\": \"aproveite os mercados eletrônicos em tempo real\" \r\n        } \r\n    } \r\n]\r\n"
-				},
 				"url": {
-					"raw": "{{url}}/users",
+					"raw": "https://jsonplaceholder.typicode.com/users/2",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"jsonplaceholder",
+						"typicode",
+						"com"
 					],
 					"path": [
-						"users"
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_consulta_username",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users/?username=Samantha",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Samantha"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_consulta_Phone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users/?phone=1-463-123-4447",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "1-463-123-4447"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_consulta_website",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users/?website=demarco.info",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "website",
+							"value": "demarco.info"
+						}
 					]
 				}
 			},
