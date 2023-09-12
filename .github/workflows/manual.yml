@@ -11,23 +11,7 @@ on:
  workflow_dispatch:      # EXECUÇÃO MANUAL
 
 jobs:
-
   test-api:
-    runs-on: ubuntu-latest
-    name: A job to say hello
-    steps:
-      - name: Hello world action step
-        id: hello
-        uses: actions/hello-world-docker-action@v1
-        with:
-          who-to-greet: Teste 1
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "A hora capturada foi ${{ steps.hello.outputs.time }}"
-
-
-
-
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
